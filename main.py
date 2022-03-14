@@ -10,7 +10,6 @@ from PIL import Image
 
 allFile=[]
 clearFile=[]
-unclearFile=[]
 shortSizeFile=[]
 
 
@@ -25,14 +24,14 @@ for x in glob.glob(origin_file):
     width1x = img1x.width
     allFile.append(fileName1x)
 
-    for y in glob.glob(target_file_2x):
+    for y in glob.glob(target_file_2x): #TODO 対象のファイルを指定
         fileNameTarget = y[y.rfind('\\')+1:y.rfind('')]
         imgTarget = Image.open(y)
         widthTarget=imgTarget.width
 
         if  fileName1x == fileNameTarget:
             clearFile.append(fileNameTarget)
-            width_diff= (widthTarget + 2) - width1x * 1.9 #
+            width_diff= (widthTarget + 2) - width1x * 2 #TODO 対象のファイルの倍率を指定
             if width_diff <= 0:
                 shortSizeFile.append(fileNameTarget)
 
