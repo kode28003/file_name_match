@@ -17,9 +17,9 @@ clearFile3x=[]
 shortSizeFile3x=[]
 
 
-origin_file='C:\\Users\\elect\\Documents\\lion-toothquest-app\\assets\\images\\*.png'
-target_file_2x='C:\\Users\\elect\\Documents\\lion-toothquest-app\\assets\\images\\2.0x\\*.png'
-target_file_3x='C:\\Users\\elect\\Documents\\lion-toothquest-app\\assets\\images\\3.0x\\*.png'
+origin_file='C:\\Users\\Documents\\app\\assets\\images\\*.png'
+target_file_2x='C:\\Users\\Documents\\app\\assets\\images\\2.0x\\*.png'
+target_file_3x='C:\\Users\\Documents\\app\\assets\\images\\3.0x\\*.png'
 
 
 for x in glob.glob(origin_file):
